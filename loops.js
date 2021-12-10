@@ -114,20 +114,18 @@
 // return the value of vcount.
 // use console.log to call vowel_count pass in this string: The quick brown fox
 
-I was not able to go further than the 1st for loop -- did not know what you meant when you wrote  ...with the indexOf method to check if the values in the given string... I did research however I appear to be confusing myself even more. I know did some discussions on indexOf on Nov 18 ---- PLEASE GO OVER THIS ONE IN CLASS OR IF YOU ARE ABLE TO DO SO AFTER CLASS.. IT WOULD BE GREATLY APPRECIATED. 
-IT IS NOW 4:15 am --- NEED HELP... HAVE TO STOP. 
+function vowel_count(arg){
+    let vowel_list = 'aeiouAEIOU';
+    let vcount = 0;
+    let vowelListArry = vowel_list.split("");
 
+   let argArry = arg.split("");
+    for(i = 0; i <= argArry.length; i++){
+     if(vowelListArry.indexOf(argArry[i]) !== -1){
+         vcount = vcount + 1;
+   }
+}
+console.log(vcount);
 
-// function vowel_count(arg) {
-//     let vowel_list = 'aeiouAEIOU';
-//     let vcount = 0;
-//     for(let i = 0; i < arg.length; i++){
-//       if(vowel_count.indexOf('') === 1 ){
-//           let str = vowel_list.length
-
-// -------------------...str.indexOf('') / str.includes('') / .charArt()...
-//       } else {
-//           vowel_count.
-//       }
-//     }
-// }
+}
+vowel_count('The quick brown fox ran through the forest')
